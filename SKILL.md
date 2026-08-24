@@ -1,15 +1,15 @@
 ---
 name: redaction-pedagogique
-description: Rédiger README, rapports et documentation dans le style de Guillaume, académique et pédagogique. S'applique à toute rédaction destinée à un lecteur (README, rapport, note, section de documentation), en français d'abord. Expliquer comme si le lecteur avait cinq ans sans rien perdre de la technicité, dérouler la méthode pas à pas, guider la lecture des tableaux et figures, soigner la mise en forme.
+description: Rédiger README, rapports et documentation dans le style de Guillaume, académique et pédagogique. S'applique à toute rédaction destinée à un lecteur (README, rapport, note, article, section de documentation), en français d'abord. Expliquer comme si le lecteur avait cinq ans sans rien perdre de la technicité, écrire des phrases qui tiennent debout, rester neutre, dérouler la méthode pas à pas, guider la lecture des tableaux et figures.
 ---
 
 # Rédaction pédagogique, dans le ton de Guillaume
 
 Ce skill gouverne l'écriture de tout document destiné à être lu par quelqu'un d'autre : README, rapport,
-note, documentation. Il vient du travail POL1900 (UQAM, 2021) et du README de `memoire-uqam-2024`, réécrits
-et validés par Guillaume. La règle d'or tient en une phrase : **écrire pour un lecteur intelligent qui ne
-connaît pas encore le sujet**, donc des mots simples, chaque terme technique défini au moment où il apparaît,
-et la méthode intacte.
+note, article, documentation. Il vient du travail POL1900 (UQAM, 2021) et du README de `memoire-uqam-2024`,
+puis des relectures successives d'une machine de contenu B2B en production. La règle d'or tient en une
+phrase : **écrire pour un lecteur intelligent qui ne connaît pas encore le sujet**, donc des mots simples,
+chaque terme technique défini au moment où il apparaît, et la méthode intacte.
 
 ## 1. La voix
 
@@ -47,7 +47,55 @@ Le vocabulaire se simplifie, la méthode jamais. Concrètement :
   aucun raccourci abusif. Si simplifier oblige à déformer, garder la version exacte et l'expliquer plus
   longuement.
 
-## 3. La mise en forme
+## 3. La logique avant le style
+
+**Un texte peut avoir toutes ses sources vérifiées et rester faux.** Les défauts qui coûtent le plus cher ne
+sont pas des erreurs de fait, ce sont des phrases qui ne tiennent pas debout. Le lecteur les repère sans rien
+connaître au sujet, et une seule suffit à lui faire douter de tout le reste.
+
+Dix défauts reviennent. Tous les exemples ci-dessous ont été écrits, puis rejetés en relecture.
+
+| Défaut | À ne pas écrire | Ce qui le corrige |
+|---|---|---|
+| **La prémisse invraisemblable** | « Quand un fournisseur annonce une baisse, le réflexe est d'attendre la suivante. » | Décrire le réflexe réel du lecteur. Personne n'attend une seconde baisse le jour d'une première. |
+| **La phrase d'effet** | « Les deux réflexes sont faux. » | La supprimer, puis écrire l'explication. Elle annonçait une réfutation sans rien réfuter. |
+| **L'arithmétique inventée** | « Le prix baisse de moitié, l'usage triple, la facture double. » | Refaire le calcul à la main. 0,5 × 3 = 1,5, donc la facture augmente de 50 %. |
+| **La chronologie inversée** | « Tout le marché suit », alors que le marché avait bougé avant l'annonce citée. | Comparer les dates avant d'écrire un lien de succession. |
+| **L'absolu indéfendable** | « Négocier le prix ne change rien. » | « Négocier le prix ne protège que la moitié du budget. » |
+| **La balance rhétorique** | « Bonne nouvelle pour l'activité, mauvaise surprise pour la trésorerie. » | Expliquer le mécanisme au lieu d'opposer deux effets symétriques. |
+| **Le terme employé avant sa définition** | « contrôle intégré » en accroche, défini quatre paragraphes plus bas. | Définir à la première occurrence, ou renoncer au terme en accroche. |
+| **La double négation** | « Gouverner n'est pas ce qui freine. » | Écrire l'affirmation positive. |
+| **La causalité promise puis retirée** | Une accroche qui affirme un lien que le corps déclare ensuite non établi. | Aligner titre, accroche et corps sur le même statut. |
+| **Le mécanisme réinventé** | Présenter comme une observation personnelle une loi qui porte déjà un nom. | La nommer et la dater. Le paradoxe de Jevons, 1865, plutôt qu'une trouvaille maison. |
+
+**Trois questions passent le texte au filtre, phrase par phrase.**
+
+1. Quelqu'un se comporte-t-il vraiment comme cela ?
+2. Ce calcul tombe-t-il juste si je le refais à la main ?
+3. Cette phrase disparaît-elle sans que rien ne manque au raisonnement ?
+
+La troisième question est la plus rentable. Une phrase qui peut disparaître sans perte n'était pas un
+argument, c'était un effet, et le lecteur le sent avant de savoir le nommer.
+
+## 4. Rester neutre
+
+Le lecteur doit pouvoir refaire le raisonnement et arriver ailleurs. Un texte qui ne lui laisse pas cette
+liberté cesse d'expliquer et se met à plaider.
+
+- **L'adjectif qui juge remplace le chiffre qui mesure.** « Spectaculaire », « impressionnant »,
+  « décevant », « massif » se remplacent par la mesure. Si la mesure n'existe pas, l'adjectif ne la remplace
+  pas, il la masque.
+- **Attribuer.** Qui affirme, à quelle date, sur quel échantillon. Une enquête auprès de 218 personnes ne se
+  présente pas comme un fait général.
+- **Traiter l'objection la plus forte, pas la plus commode.** Une objection de paille ruine la crédibilité
+  plus sûrement que l'objection elle-même, parce que le lecteur voit qu'on l'a ménagé.
+- **Deux sources qui se contredisent se rapportent toutes les deux**, plutôt que d'en choisir une en silence.
+- **Toute réserve porte sa date.** Une enquête de janvier ne mesure pas un événement d'août, et le texte le
+  dit lui-même plutôt que de laisser le lecteur le découvrir.
+- **Un désaccord s'argumente, il ne s'assène pas.** Écrire pourquoi la thèse adverse est plausible avant
+  d'écrire pourquoi elle ne tient pas.
+
+## 5. La mise en forme
 
 - **Des titres qui affirment ou interrogent**, jamais des étiquettes : « La méthode, pas à pas », « D'où vient
   ce projet, et ce qu'il apporte », plutôt que « Méthodologie », « Contexte ».
@@ -59,17 +107,20 @@ Le vocabulaire se simplifie, la méthode jamais. Concrètement :
   constats : … », qui dit au lecteur ce que les chiffres établissent et ce qu'ils n'établissent pas.
 - **Chaque figure est suivie de son mode d'emploi** : « Comment lire cette figure : chaque point est… ».
   Une figure sans phrase de lecture est une figure décorative.
+- **Deux séries qui ne couvrent pas la même période vont dans deux volets séparés.** Les fondre dans un seul
+  graphique suggère une causalité que les données n'établissent pas.
 - Citations en guillemets français « », exactes ; sources nommées avec leur date ; capitale au premier mot
   des titres seulement.
 
-## 4. Les interdits
+## 6. Les interdits
 
 - Aucun tiret cadratin ni demi-cadratin, nulle part : virgules, deux points, parenthèses ou deux phrases.
 - Aucun mot du lexique artificiel : `il convient de noter`, `force est de constater`, `véritable`,
   `incontournable`, `au cœur de`, `levier`, `écosystème`, `pierre angulaire`, `témoigne de`,
   `joue un rôle clé`, `s'inscrit dans`, `plongeons`, `explorons`, `n'hésitez pas à`, `dans un monde où`.
 - Aucune annonce creuse (« Nous allons maintenant voir… ») : une phrase d'annonce qui resterait vraie avec un
-  autre contenu se supprime.
+  autre contenu se supprime. Cela vaut aussi pour les amorces de lecture (« Une notion suffit pour lire ce
+  qui suit »), qui décrivent le geste de lire au lieu d'apporter la notion.
 - Aucun ternaire fabriqué (« stimulant, collaboratif et innovant ») : trois termes seulement s'il y a
   exactement trois choses réelles à compter.
 - Aucune conclusion positive générique (« l'avenir s'annonce prometteur ») : couper et finir sur le dernier fait.
@@ -77,15 +128,18 @@ Le vocabulaire se simplifie, la méthode jamais. Concrètement :
 - **Jamais combler une information absente** : écrire « non trouvé », « à vérifier », « non publié », plutôt
   qu'une vraisemblance.
 
-## 5. Les chiffres
+## 7. Les chiffres
 
 Chaque chiffre porte son statut, explicite ou évident par contexte : **mesuré** (relevé ou calculé de première
-main, avec sa source dans le dépôt), **rapporté** (publié par une source nommée, non revérifié), **modélisé**
-(calculé sous hypothèses déclarées), **non trouvé** (cherché sans résultat, écrit comme tel). Aucun chiffre
-retapé de mémoire : copier depuis le fichier de résultats, et dire de quel fichier il vient
-(« tous les chiffres viennent de `results/metrics.csv` »).
+main, avec sa source dans le dépôt), **rapporté** (publié par une source nommée, non revérifié), **calculé**
+(dérivé d'un chiffre publié, la dérivation étant annoncée), **modélisé** (calculé sous hypothèses déclarées),
+**non trouvé** (cherché sans résultat, écrit comme tel). Aucun chiffre retapé de mémoire : copier depuis le
+fichier de résultats, et dire de quel fichier il vient (« tous les chiffres viennent de `results/metrics.csv` »).
 
-## 6. Gabarit d'un README ou d'un rapport
+Un complément à 100 est un calcul, pas une mesure. Si la source publie « 22 % à 35 % de réussite », écrire
+« 65 % à 78 % d'échec, obtenu par soustraction et non mesuré par la source ».
+
+## 8. Gabarit d'un README ou d'un rapport
 
 1. **Titre** descriptif, puis le contexte en deux phrases et le **résultat en une phrase**, en gras, chiffres
    clés inclus. Résumé anglais juste après si le document est en français.
@@ -103,23 +157,33 @@ retapé de mémoire : copier depuis le fichier de résultats, et dire de quel fi
 
 Adapter librement : un document court garde l'ordre (réponse d'abord, méthode, limites) sans le décor.
 
-## 7. Avant et après
+## 9. Avant et après
 
-Au lieu de : « Ce projet propose une approche innovante s'inscrivant dans une démarche de modélisation
-avancée des rendements, véritable pierre angulaire de la finance quantitative moderne. »
+**Le remplissage.** Au lieu de : « Ce projet propose une approche innovante s'inscrivant dans une démarche de
+modélisation avancée des rendements, véritable pierre angulaire de la finance quantitative moderne. »
 
 Écrire : « Ce projet teste si huit modèles d'apprentissage machine, nourris de 410 séries macroéconomiques
 canadiennes, prédisent les rendements mensuels de 49 actions du TSX. Réponse courte : mal. Le meilleur
 portefeuille construit sur ces prédictions rapporte 1,1 % par an, contre 11,5 % pour un simple portefeuille
 équipondéré ; le reste du document montre pourquoi, chiffres à l'appui. »
 
-## 8. Contrôles avant de rendre
+**L'effet à la place de l'explication.** Au lieu de : « Quand un fournisseur annonce une baisse, le réflexe
+est d'attendre la suivante ou de passer au moins cher. Les deux réflexes sont faux. »
+
+Écrire : « Une baisse de tarif se lit d'abord comme une bonne nouvelle pour le budget. Elle en est rarement
+une, parce que votre facture ne dépend pas du prix affiché mais de la quantité que vous consommez. Or cette
+quantité augmente justement quand le prix descend. »
+
+## 10. Contrôles avant de rendre
 
 1. La réponse ou le résultat apparaît dans les deux premières phrases.
 2. Chaque terme technique est défini à sa première occurrence, en apposition.
 3. Chaque idée abstraite est suivie d'un exemple concret, dont un déroulé avec de vrais nombres.
-4. Chaque tableau a sa lecture guidée, chaque figure son mode d'emploi.
-5. Chaque chiffre a une source dans le dépôt ou un statut déclaré ; rien n'est comblé par une supposition.
-6. Aucun tiret long, aucun mot de la liste des interdits, aucune annonce creuse.
-7. Les limites sont dans le document, avec leur statut, pas dans un tiroir.
-8. Relire une seconde fois contre la section 4 : la réécriture réintroduit ces motifs par défaut.
+4. **Chaque calcul inventé est refait à la main.**
+5. **Chaque phrase passe les trois questions de la section 3.** Vraisemblable, juste, indispensable.
+6. Chaque tableau a sa lecture guidée, chaque figure son mode d'emploi.
+7. Chaque chiffre a une source dans le dépôt ou un statut déclaré ; rien n'est comblé par une supposition.
+8. Aucun adjectif qui juge là où un chiffre mesure.
+9. Aucun tiret long, aucun mot de la liste des interdits, aucune annonce creuse.
+10. Les limites sont dans le document, avec leur statut, pas dans un tiroir.
+11. Relire une seconde fois contre les sections 3 et 6 : la réécriture réintroduit ces motifs par défaut.
