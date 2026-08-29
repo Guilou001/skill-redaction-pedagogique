@@ -6,10 +6,52 @@ description: Rédiger README, rapports et documentation dans le style de Guillau
 # Rédaction pédagogique, dans le ton de Guillaume
 
 Ce skill gouverne l'écriture de tout document destiné à être lu par quelqu'un d'autre : README, rapport,
-note, article, documentation. Il vient du travail POL1900 (UQAM, 2021) et du README de `memoire-uqam-2024`,
-puis des relectures successives d'une machine de contenu B2B en production. La règle d'or tient en une
-phrase : **écrire pour un lecteur intelligent qui ne connaît pas encore le sujet**, donc des mots simples,
-chaque terme technique défini au moment où il apparaît, et la méthode intacte.
+note, article, documentation. Il vient du travail POL1900 (UQAM, 2021), des six travaux de maîtrise du
+dépôt `Portfolio` (2021-2022) et du README de `memoire-uqam-2024`, puis des relectures successives d'une
+machine de contenu B2B en production. La règle d'or tient en une phrase : **écrire pour un lecteur
+intelligent qui ne connaît pas encore le sujet**, donc des mots simples, chaque terme technique défini au
+moment où il apparaît, et la méthode intacte.
+
+## 0. Les textes de référence, à lire avant d'écrire
+
+Les règles qui suivent décrivent un ton ; les textes ci-dessous **sont** ce ton. Quand la question se pose
+de savoir comment Guillaume écrirait une phrase, la réponse est dans ces fichiers, pas dans une déduction
+à partir des règles. Ils vivent dans le projet Finance, sous
+`_ressources/portfolio-uqam/` (voir son `INDEX.md`) :
+
+| Texte | Ce qu'on y prend |
+|---|---|
+| `textes/pol1900.txt` | L'analyse de politique publique : la question de recherche posée puis dépliée, la structure résumé - question - méthode - résultats - limites |
+| `textes/930j_transformer.txt` | La méthode d'apprentissage automatique déroulée pas à pas, et le résultat négatif écrit sans détour |
+| `textes/7011_tp1.txt` | Les faits stylisés commentés chiffre par chiffre, avec la comparaison à la littérature en face |
+| `textes/8086_tp1_layout.txt` | La prévision comparée modèle par modèle |
+| `textes/8086_tp2_layout.txt` | Le SVAR : les fonctions de réponse lues et interprétées |
+| `textes/930j_ml_layout.txt` | Sept bases de données comparées, hyperparamètres discutés |
+| `textes/8066_tp2_layout.txt` | La démonstration théorique posée proprement |
+
+Sept marques de fabrique s'y observent, et doivent se retrouver dans ce qu'on écrit :
+
+1. **Première personne du pluriel**, ou « je » dans un travail individuel : « nous allons rajouter au
+   modèle une notion de temps », « j'utilise les données du prix de l'action ».
+2. **La méthode se déroule dans l'ordre où on la ferait**, chaque étape annoncée par ce qu'elle sert à
+   obtenir : « La première étape de l'implémentation de notre modèle est de considérer comment encoder la
+   notion de temps ».
+3. **Les connecteurs sont ceux d'un exposé oral tenu par écrit** : `En ce sens`, `De plus`, `Également`,
+   `Toutefois`, `D'autre part`, `De surcroît`, `En guise de conclusion`, `On peut noter que`,
+   `Il est important de noter que`. Ils engagent, et ce qui suit tient la promesse.
+4. **Chaque affirmation porte son chiffre entre parenthèses** : « à l'exception des dépenses publiques
+   (0,1554) », « une performance de prédiction de 2,7 (MSE sur variance) ».
+5. **La comparaison à la littérature met les deux nombres côte à côte** : « notre volatilité de l'IPC est
+   moindre que la leur (1,293 comparativement à 1,41) ».
+6. **Le résultat négatif s'écrit sans détour, puis s'explique** : « notre modèle ne prédit qu'une ligne
+   plate », « le réseau de neurones 2;5 semble sous-apprendre », suivis du mécanisme qui en rend compte.
+7. **L'exemple concret suit l'idée abstraite**, introduit par « Pour illustrer cela, on peut prendre
+   l'exemple de » ou « Un exemple de modèle périodique peut être par exemple ».
+
+Une règle de reprise, enfin. Quand un document reprend un travail existant de Guillaume, **son texte se
+recopie mot pour mot**, en citation, sans reformulation ni correction de style : les fautes de frappe et
+les tournures de 2021 font partie du document. Ce qu'on écrit autour se distingue clairement, et ne
+prétend jamais être de lui.
 
 ## 1. La voix
 
