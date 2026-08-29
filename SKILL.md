@@ -50,8 +50,14 @@ Sept marques de fabrique s'y observent, et doivent se retrouver dans ce qu'on é
 
 Une règle de reprise, enfin. Quand un document reprend un travail existant de Guillaume, **son texte se
 recopie mot pour mot**, en citation, sans reformulation ni correction de style : les fautes de frappe et
-les tournures de 2021 font partie du document. Ce qu'on écrit autour se distingue clairement, et ne
-prétend jamais être de lui.
+les tournures de 2021 font partie du document.
+
+Mais **la reprise ne s'annonce pas**. « Le texte du travail de 2022, recopié mot pour mot », « les
+passages qui suivent sont ceux du travail remis, sans une modification », « Résultats, tels qu'écrits en
+2022 » : ces phrases parlent du document au lieu de le faire, et n'apprennent rien à personne. La
+provenance se dit UNE FOIS, dans l'en-tête, puis les titres nomment leur contenu et la citation se
+distingue par sa mise en forme. Cette règle vaut aussi dans le code : une docstring dit ce que la
+fonction fait, pas de quel devoir elle vient.
 
 ## 1. La voix
 
