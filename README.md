@@ -144,3 +144,44 @@ Les propositions se font par issue ou pull request. Une règle nouvelle est acce
 ## Licence
 
 MIT. Voir [LICENSE](LICENSE).
+
+---
+
+## Un second skill, à part : `ecriture-guillaume`
+
+Ce dépôt porte désormais **deux skills distincts**, qui ne servent pas à la même chose et qui ne sont
+pas fusionnés.
+
+| | `redaction-pedagogique` (racine) | `ecriture-guillaume` (dossier) |
+|---|---|---|
+| Ce qu'il fait | impose une méthode de rédaction vérifiable | reproduit une voix précise, celle de Guillaume Vaudescal |
+| D'où il vient | des règles tirées de la relecture d'une production en continu | de la mesure de sept travaux de maîtrise, 733 phrases comptées une à une |
+| Ce qu'il interdit | les tics des modèles de langage | les mots qui n'existent pas en français, à commencer par les calques de l'anglais |
+| Ce qu'il autorise | rien qui affaiblisse la rigueur | trois à cinq imperfections humaines par document |
+| Quand l'employer | tout document destiné à un lecteur | quand le texte doit passer pour écrit par son auteur |
+
+**Le point qui compte.** Le chapitre 1 d'`ecriture-guillaume` n'est pas le style, c'est le **sens**.
+Il part d'un constat : un texte dans la bonne voix mais dont les mots ne veulent rien dire est un
+échec plus grave qu'un texte hors voix. Il donne donc trois questions à passer sur chaque phrase, et
+un tableau de 24 calques de l'anglais avec le mot juste à mettre à leur place.
+
+Trois exemples du tableau :
+
+| À ne pas écrire | Pourquoi c'est faux | Écrire à la place |
+|---|---|---|
+| une famille mince | « mince » ne se dit pas d'une catégorie | un métier qui n'a qu'un seul projet |
+| une forme fermée | calque de *closed form* | une formule qui se calcule à la main |
+| un seau de qualité | calque de *bucket* ; un seau est un récipient | une tranche de notation, une classe de risque |
+
+Les deux skills peuvent coexister, l'un fixant la méthode et l'autre la voix. Ils peuvent aussi être
+fusionnés plus tard, à une condition : les deux se contredisent sur trois points, l'annonce de plan,
+le statut des chiffres et la longueur des phrases, et la fusion devra trancher au lieu de faire une
+moyenne.
+
+**Installation.** Copier `ecriture-guillaume/` dans `~/.claude/skills/`, à côté de
+`redaction-pedagogique/`.
+
+```bash
+mkdir -p ~/.claude/skills/ecriture-guillaume
+cp ecriture-guillaume/SKILL.md ~/.claude/skills/ecriture-guillaume/
+```
